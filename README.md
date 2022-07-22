@@ -76,9 +76,9 @@ View output in your browser at `http://localhost:5000`
 
 Osuca returns **JSON** objects for the following valid **HTTP GET** requests:
 
-- /course
-- /course-year-aggregate
-- /course-quarter-aggregate
+- /courses
+- /course-year-aggregates
+- /course-quarter-aggregates
 
 For example, `$curl http://localhost:5000/courses` will return a JSON list of course objects to the clients.
 
