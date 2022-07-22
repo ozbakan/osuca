@@ -92,6 +92,8 @@ As shown in the diagram, Osuca requests a CSV document that resides in Google do
 
 ### Service Details
 
+The following shows example responses to the requests.
+
 /courses
 
 ```
