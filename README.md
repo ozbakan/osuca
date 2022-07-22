@@ -61,7 +61,7 @@ $ export OSUCA_DATA_SOURCE='https://docs.google.com/spreadsheets/d/1MFBGJbOXVjtT
 flask run
 ``` 
 
-View output in your browser at ```http://localhost:5000```
+View output in your browser at http://localhost:5000
 
 
 
@@ -75,7 +75,9 @@ Osuca returns **JSON** objects the following **HTTP GET** requests:
 
 For example, ```$curl http://localhost:5000/courses``` will return a JSON list of course objects to the clients.
 
+### UML Sequence Diagram
 ![alt text][osuca sequence uml]
+
 [osuca sequence uml]: https://github.com/ozbakan/osuca/blob/master/docs/images/uml-sequence.png  "Osuca Sequence UML"
 
 
