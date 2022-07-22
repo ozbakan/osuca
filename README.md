@@ -1,6 +1,6 @@
 # OSU Course Analytics (Osuca)
 
-Analyze student review responses for courses in the Computer Science (CS) program of Oregon State University (OSU).
+Analyze student review responses for courses in the Computer Science (CS) program of Oregon State University (OSU)
 
 ## Description
 
