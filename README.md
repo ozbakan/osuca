@@ -10,7 +10,7 @@ This program allows analyzing [the online survey of course reviews](https://docs
 - Does course difficulty increase if I take other courses in the same quarter?
 - Which course combinations are most difficult taken together?
 
-It also exposes several services for client programs to query course analytics in JSON format.
+It also exposes several services for client programs to query course analytics in JSON format. See [Communication Contract](#communication-contract) for further details. 
 
 ## Getting Started
 
