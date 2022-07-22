@@ -40,7 +40,7 @@ $ . venv/bin/activate
 > venv\Scripts\activate
 ```
 
-#### Install Osuca and dependencies from PyPI.
+#### Install Osuca and dependencies from PyPI
 
 ```
 (venv) pip install osuca
@@ -74,7 +74,7 @@ View output in your browser at `http://localhost:5000`
 
 ## Communication Contract
 
-Osuca returns **JSON** objects the following **HTTP GET** requests:
+Osuca returns **JSON** objects for the following valid **HTTP GET** requests:
 
 - /course
 - /course-year-aggregate
@@ -83,6 +83,8 @@ Osuca returns **JSON** objects the following **HTTP GET** requests:
 For example, `$curl http://localhost:5000/courses` will return a JSON list of course objects to the clients.
 
 ### UML Sequence Diagram
+
+As shown in the diagram, Osuca requests a CSV document that resides in Google documents containing the scraped student responses. Then it serves the contents of this document in JSON form to clients.
 
 ![alt text][osuca sequence uml]
 
