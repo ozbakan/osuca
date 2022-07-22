@@ -75,6 +75,12 @@ Osuca returns **JSON** objects the following **HTTP GET** requests:
 
 For example, ```$curl http://localhost:5000/courses``` will return a JSON list of course objects to the clients.
 
+Reference-style: 
+![alt text][osuca sequence uml]
+
+[osuca sequence uml]: https://github.com/ozbakan/osuca/blob/master/docs/images/uml-sequence.png  "Osuca Sequence UML"
+
+
 ### Service Details
 
 /courses
@@ -146,11 +152,8 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
+Tolga Ozbakan | tolga@ozbakan.com
 
-[tolga@ozbakan.com](tolga@ozbakan.com) tolga@ozbakan.com
-
-[link text itself]: tolga@ozbakan.com 
 
 ## Version History
 
