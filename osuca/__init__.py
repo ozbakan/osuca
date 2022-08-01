@@ -1,11 +1,12 @@
 import os
 import sys
 from flask import Flask
-
+from flask_cors import CORS
 
 def create_app(test_config=None):
     # Create the app.
     app = Flask(__name__, instance_relative_config=True)
+    CORS(app)
     print("Creating OSU Course Analytics Application: %s" % app.name)
     print("Instance path: %s" % app.instance_path)
     print("System prefix: %s" % sys.prefix)

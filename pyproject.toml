@@ -5,11 +5,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "osuca"
-version = "2.2.0"
+version = "2.2.1"
 dependencies = [
     "Flask",
     "flask-restful",
     "requests",
+    "flask-cors"
 ]
 authors = [
   { name="Tolga Ozbakan", email="tolga@ozbakan.com" },
