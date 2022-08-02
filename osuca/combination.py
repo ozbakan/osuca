@@ -17,14 +17,9 @@ def combination(key, reverse):
         selection = db.course(selection_label)
         query_result = db.course_combination_aggregate(selection)
 
-    def course(cca):
-        return cca[0][0]
-
-    def count(cca):
-        return cca[1].count
-
-    def mean(cca):
-        return cca[1].mean
+    def course(cca): return cca[0][0]
+    def count(cca): return cca[1].count
+    def mean(cca): return cca[1].mean
     dispatcher = {'course': course, 'count': count, 'mean': mean}
 
     return render_template("combination.html",
