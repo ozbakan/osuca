@@ -1,7 +1,9 @@
 from flask import current_app, g, jsonify
 from flask_restful import Api, Resource
+
 from osuca.db import get_db
-from osuca.model.JSONAdapter import JSONAdapter as Adapter, Encoder
+from osuca.model.JSONAdapter import Encoder
+from osuca.model.JSONAdapter import JSONAdapter as Adapter
 
 
 def init_app():

@@ -1,8 +1,10 @@
-from osuca.model.analytics import Analytics
-from pkg_resources import resource_string as resource_bytes
 import requests
+from pkg_resources import resource_string as resource_bytes
+
+from osuca.model.analytics import Analytics
 
 analytics = None
+
 
 def init_app(data_source):
     global analytics  # declare as global to assign value
@@ -19,6 +21,7 @@ def init_app(data_source):
             print('An error has occurred while retrieving %s.' % data_source)
     analytics = Analytics(reviews.text)
     get_db()
+
 
 def get_db():
     return analytics

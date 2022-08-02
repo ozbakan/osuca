@@ -1,8 +1,8 @@
-from flask import Blueprint, render_template, request, jsonify, current_app
+from flask import Blueprint, current_app, jsonify, render_template, request
 from werkzeug.exceptions import abort
 
 from osuca.db import get_db
-from osuca.model.JSONAdapter import JSONAdapter, Encoder
+from osuca.model.JSONAdapter import Encoder, JSONAdapter
 
 bp = Blueprint('term', __name__)
 
