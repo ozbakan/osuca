@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Summary Statistics
+{% endblock %}
+
+{% block form %}
+<form action="{{ url_for('summary.fetch') }}" method="POST">
+{% endblock %}
+
+{% block chart %}
+<div>
+{{ microservice_result }}
+</div>
+{% endblock %}

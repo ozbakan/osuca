@@ -54,8 +54,8 @@ def create_app(test_config=None):
     from . import combination
     app.register_blueprint(combination.bp)
 
-    from . import external 
-    app.register_blueprint(external.bp)
+    from . import summary 
+    app.register_blueprint(summary.bp)
 
     # Use app_context() in a with block, and everything that runs in the block
     # will have access to current_app.
