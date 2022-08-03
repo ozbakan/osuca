@@ -11,6 +11,27 @@ Summary Statistics
 
 {% block chart %}
 <div>
-{{ microservice_result }}
+  <table>
+    <tr>
+      <th>
+        Course 
+      </th>
+      <th>
+        Average Difficulty
+      </th>
+      <th>
+        Minimum Difficulty 
+      </th>
+      <th>
+        Maximum Difficulty 
+      </th>
+    </tr>
+    {% if microservice_result %}
+      {% for item in microservice_result %}
+      <tr>
+      </tr>
+      {% endfor %}
+    {% endif %}
+  </table >
 </div>
 {% endblock %}

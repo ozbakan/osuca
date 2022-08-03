@@ -1,5 +1,4 @@
 from flask import Blueprint, render_template, request
-from werkzeug.exceptions import abort
 
 from osuca.db import get_db
 
