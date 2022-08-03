@@ -29,6 +29,10 @@ Summary Statistics
     {% if microservice_result %}
       {% for item in microservice_result %}
       <tr>
+        <td>{{ item[0] }}</td>
+        <td>{{ item[1][0] }}</td>
+        <td>{{ item[1][1] }}</td>
+        <td>{{ item[1][2] }}</td>
       </tr>
       {% endfor %}
     {% endif %}
