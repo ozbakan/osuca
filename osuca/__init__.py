@@ -31,6 +31,11 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    # a simple page that says hello
+    @app.route('/hello')
+    def hello():
+        return 'Hello, World!'
+
     # Read environment variables beginning with 'OSUCA', '_' gets dropped.
     app.config.from_prefixed_env('OSUCA')
     data_source = None
