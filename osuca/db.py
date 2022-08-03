@@ -7,7 +7,8 @@ analytics = None
 
 
 def init_app(data_source):
-    global analytics  # declare as global to assign value
+    # Declare as analtyics global to assign value
+    global analytics
     reviews = None
     # Let's use the static file if there is no configuration parameter passed.
     if data_source is None:
@@ -21,7 +22,6 @@ def init_app(data_source):
             print('An error has occurred while retrieving %s.' % data_source)
     analytics = Analytics(reviews.text)
     get_db()
-
 
 def get_db():
     return analytics
