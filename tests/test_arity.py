@@ -1,4 +1,3 @@
-import pytest
 from osuca.db import get_db
 
 
