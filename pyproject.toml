@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "osuca"
-version = "2.2.1"
+version = "2.2.2"
 dependencies = [
     "Flask",
     "flask-restful",
@@ -26,5 +26,4 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/ozbakan/osuca"
