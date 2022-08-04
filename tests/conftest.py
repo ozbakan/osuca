@@ -1,6 +1,6 @@
 import pytest
-
 from osuca import create_app
+
 
 @pytest.fixture
 def app():
@@ -11,11 +11,9 @@ def app():
 
     yield app
 
-
 @pytest.fixture
 def client(app):
     return app.test_client()
-
 
 @pytest.fixture
 def runner(app):
